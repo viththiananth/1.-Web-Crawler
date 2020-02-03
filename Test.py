@@ -25,7 +25,7 @@ def start(url):
     # the <div> tags with class <entry-content> 
     for each_text in soup.findAll('div', {'class': 'entry-content'}):
         content = each_text.text
-
+#        print(content)
         # use split() to break the sentence into  
         # words and convert them into lowercase  
         words = content.lower().split()
@@ -83,4 +83,4 @@ def create_dictionary(clean_list):
 
 # Driver code
 if __name__ == '__main__':
-    start("https://www.geeksforgeeks.org/programming-language-choose/") 
+    start("https://www.geeksforgeeks.org/python-program-crawl-web-page-get-frequent-words/")
